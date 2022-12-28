@@ -11,9 +11,10 @@
 }
 
 .nav{
+    flex: 0.2;
     background-color:#2C3034;
     width: 15vw;
-    height: 100vh;
+    height: 130vh;
     /* float:left; */
     border-right: 2px solid #4C4F52;
     color:#C1C1C3;
@@ -21,21 +22,44 @@
     align-items: flex-start;
 }
 .title-dash{
-    font-size: 15px;
+    /* font-size: 15px;
     font-weight: normal;
     display:flex;
     /* align-items: center; */
-    margin-bottom:20px;
-    justify-content: start;
+    /* margin-bottom:20px;
+    justify-content: start; */ 
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px 20px 0 30px;
+    margin-bottom: 20px;
+    color: #BBBBBD;
+    font-size: 15px;
+    
+    
 }
 /* .dash{
     background: #5D4192;
     margin-left: 5%;
 } */
+.title-dash h2{
+    margin-left: 10px;
+}
 .nav-list{
-    margin-top:40px;
-    font-size: 15px;
+    /* margin-top:40px;
+    font-size: 15px; */
     color:#808080;
+    
+    margin-bottom: 30px;
+    padding-right: 30px;
+    margin-left: 25px;
+    margin-top: 50px;
+    /* display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 7px 0pc 7px 30px; */
 }
 
 .nav-item{
@@ -43,16 +67,26 @@
     margin-top:10px;
     display:flex;
     /* align-items: center; */
-    justify-content:start;
+    /* justify-content:space-evenly; */
+    
+    
 }
 
-.nav-icon{
-
+.nav-icon {
+    float: left;
     display: flex;
     width: 30px;
     height: 30px;
+    background: red;
     
-}
+  }
+  .nav-item h4{
+    margin-left: 25px;
+    margin-top: 3px;
+
+  }
+  
+  
 .image-wrap{
     width: 50px;
     height: 50px;
@@ -65,14 +99,15 @@
 }
 
 .icon-wrap{
-    height: 20px;
-    width: 20px;
+    height: 5px;
+    width: 5px;
     margin-right: 10px;
+
 }
 
 .icon-wrap img{
-    height: 100%;
-    width: 100%;
+    height: 50%;
+    width: 50%;
 }
 
 .main-section{
@@ -96,12 +131,19 @@
     color: #BBBBBD;
     
 }
+.profile > .icon-wrap{
+    margin-top: -10px;
+
+}
 
 .search{
     display: flex;
     width: 60%;
-    margin-left: 20px;
+    margin-left: 30px;
 
+}
+.search > .icon-wrap{
+    margin-top: 3px;
 }
 .search input{
     width: 80%;
@@ -111,6 +153,8 @@
     font-size: 10px;
     padding: 5px 10px 5px 10px;
     background-color: #7F7F7F;
+    margin-left: 15px;
+
 }
 
 .profile > .image-wrap{
@@ -137,6 +181,7 @@
 .profile-photo{
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .profile-photo > .image-wrap{
@@ -150,6 +195,10 @@
 .profile-name h3{
     color: #BBBBBD;
 }
+/* .profile-name h3 span{
+    display: flex;
+    flex-wrap: wrap;
+} */
 
 .profile-buttons {
     display: flex;
@@ -159,6 +208,7 @@
     /* justify-content: flex-end; */
     /* align-items: flex-end; */
     /* margin-left: 5px; */
+    
   }
   
   
@@ -167,24 +217,24 @@
 .profile-buttons > .buttons{
     padding: 10px 20px;
     background-color: #34383C;
-    border: #BBBBBD solid 1px;
+    border: #717172 solid 1px;
     color: #BBBBBD;
     font-size: 13px;
     margin: 0 10px;
     border-radius: 20px;
+   
 }
 
 .content{
     display: flex;
     flex: 1;
     /* height: calc(100vh - 191px); */
-    padding: 20px 10px;
-    
+    padding: 20px 10px;    
 }
+
 .my-projects{
     width: 80%;
-    height: 100%;
-    
+    height: 100%;  
     
 
 }
@@ -226,17 +276,19 @@
     width: 100%;
     margin-top: 30px;
     justify-content: flex-end;
-    gap: 10px;
 }
+.card-icons > .icon-wrap{
+    display: flex;
+    margin: 0 15px;
+} 
 .right-section{
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    /* justify-content: flex-end; */
     height: 100%;
     width: 50%;
-    align-items: center;
-
-    
+    align-items: center;   
+     
 }
 .announcements{
     margin-bottom: 10px;
@@ -247,12 +299,15 @@
     background-color: #34383C;
     border-radius: 10px;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
 }
-
 .message{
-    width: 200px;
+    max-width: 200px;
     margin: 10px 0px;
     color: #7F7F7F;
+    
 }
 .people{
     width: 70%;
@@ -272,10 +327,12 @@
 
 .people-profile{
     display: flex;
+    max-width: 200px;
     align-items: center;
     margin-top: 5px;
 }
 
 .people-profile > .image-wrap{
     margin-right: 10px;
-}
+
+} 
